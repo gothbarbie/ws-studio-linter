@@ -1,0 +1,25 @@
+{
+  "name": "ad-validator-atom-linter",
+  "main": "./lib/ad-validator-atom-linter",
+  "version": "0.1.0",
+  "description": "Lint Widespace ads on the fly",
+  "author": "Oskar Segersvärd",
+  "repository": "https://bitbucket.com/WidespaceGIT/ad-validator-atom-linter",
+  "private": true,
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "ad-validator": "bitbucket:WidespaceGIT/ad-validator"
+  },
+  "package-deps": [
+    "linter"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  }
+}
